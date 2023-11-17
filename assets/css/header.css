@@ -1,0 +1,24 @@
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(204, 224, 242);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.header-navigation {
+
+    background-color: rgb(255, 255, 255);
+
+}
+.header-menu-nav {
+
+}
+.header-menu-item {
+
+}
+.header-theme-button {
+
+}
