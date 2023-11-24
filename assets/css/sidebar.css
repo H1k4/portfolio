@@ -1,0 +1,11 @@
+.sidebar {
+  height: 1000px;
+  width: 350px;
+  background-color: rgb(132, 153, 188);
+}
+.sidebar-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: aliceblue;
+}
