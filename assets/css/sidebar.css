@@ -1,11 +1,23 @@
 .sidebar {
-  height: 1000px;
-  width: 350px;
-  background-color: rgb(132, 153, 188);
+  padding: 50px 46px;
+  border-bottom: 1px solid #6d8093;
+  max-width: 271px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .sidebar-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  background-color: aliceblue;
+}
+.sidebar-tittle {
+  text-align: center;
+}
+.sidebar-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.sidebar p {
+  text-align: center;
 }
