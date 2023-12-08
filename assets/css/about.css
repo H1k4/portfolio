@@ -1,0 +1,15 @@
+.page-about {
+    flex-grow: 1 ;
+    align-self: stretch;
+}
+.page-about-info-list {
+    display: flex;
+   
+}
+.info-list-card {
+    display: flex;
+    padding-left: 50px; ;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}

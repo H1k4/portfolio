@@ -93,3 +93,7 @@ button {
   background: #5671a6;
   color: #5671a6;
 }
+.main {
+  display: flex;
+  align-self: stretch;
+}
