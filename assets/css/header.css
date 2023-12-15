@@ -20,5 +20,13 @@ header {
   align-items: center;
   gap: 10px;
 }
-
+.header-menu-item {
+  border-bottom: 2px solid rgb(173, 202, 211);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: -5px;
+}
+.header-menu-item:hover {
+  border-bottom: 2px solid var(--text-main-blue);
+}
 

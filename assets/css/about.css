@@ -13,3 +13,11 @@
     height: 150px;
     flex-shrink: 0;
 }
+.info-list-card img {
+  width: 17px;
+}
+.info-list-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
