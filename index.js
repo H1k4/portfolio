@@ -1,5 +1,11 @@
-var name = "Hikari";
-let name1 = "irakiH";
-// alert(name1);
-// let age = prompt("lu li la", 18)
-console.log(99 + 55, '1'+ 1, 1 + +'2', '3' + '1');
+let name = "Hikari";
+let age = 15;
+let boolean = true;
+let Nixuya = null;
+let Suka = undefined;
+let people = {
+    name: "Keiko",
+    age: 18,
+    pizdish: true,
+    children: {},
+};
