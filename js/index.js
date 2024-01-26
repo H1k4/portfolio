@@ -1,21 +1,36 @@
 
-let h1 = document.getElementsByTagName("h1");
-console.log(h1);
-let h2Mass = document.getElementsByTagName("h3");
-console.log(h2Mass);
-h2Mass[0].innerText = "CalaMaleikum";
-let classElem = document.getElementsByClassName("header-menu-item");
-classElem[classElem.length - 1].innerHTML = "ABOBA";
 let work = document.getElementById("work");
-let education = document.getElementById("education");
-console.log(work, education);
-let Blyad = document.querySelector(".header-menu-item");
-console.log(Blyad);
-work.style.bColor = "rgba(75,130,200)";
+let list = document.querySelector(".qualific-list");
+const massCards = [
+   {
+    name: "programmist",
+    univer:"Spain",
+    data:"20",
+  },
+   {
+    name: "vbgggf",
+    univer:"Srdf",
+    data:"2045",
+  },
+   {
+    name: "vbgggf",
+    univer:"Srdf",
+    data:"2045",
+  },
+];
+for (let i = 0; i < massCards.length; i++) {
+  console.log(massCards[i]);
+  list.insertAdjacentHTML("afterbegin",` <article class="qualific-item">
+  <h5>${massCards[i].name}</h5>
+  <div class="qualific-item-bottom">
+    <h5>${massCards[i].univer}</h5>
+    <div class="qualific-item-data">
+      <img src="./assets/images/data.svg" alt="">
+    <h4>${massCards[i].data}</h4>
+  </article>`);
+}
+console.log(list);
+
 work.onclick = function () {
-    education.style.display = "flex";
-    console.log(this);
-};
-education.onclick = () => {
-    console.log(this);
+
 };

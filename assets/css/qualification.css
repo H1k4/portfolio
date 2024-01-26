@@ -1,3 +1,19 @@
 .qualific-item {
     border:2px solid white;
+    width:150px;
+}
+
+.qualific-list {
+    display: flex;
+    gap:30px;
+
+}
+.qualific-choice {
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+}
+.qualific-buttons {
+    display: flex;
+    gap: 20px;
 }
