@@ -1,6 +1,7 @@
 .qualific-item {
     border:2px solid white;
     width:150px;
+   
 }
 
 .qualific-list {
@@ -12,6 +13,10 @@
     cursor: pointer;
     display: flex;
     gap: 8px;
+    color:  rgb(255, 235, 205);
+}
+.qualific-choice h3{
+    color: inherit;
 }
 .qualific-buttons {
     display: flex;
