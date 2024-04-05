@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url(normalize.css);
-@import url(header.css);
-@import url(sidebar.css);
-@import url(about.css);
-@import url(qualification.css);
+.kwadrat {
+  grid-template-columns: 150px 150px 150px;
+  display: grid;
+  gap: 5px;
+}
+.lol {
+  background-color: green;
+  width: 140px;
+  height: 140px;
+  border: solid 3px black;
+}
+.--active {
+  background-color: aquamarine;
+}
