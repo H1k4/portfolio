@@ -6,54 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body class="wrapper">
-    <div class="kwadrat">
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol --active"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
-      <div class="lol"></div>
+    <div class="card-list">
+      <div class="card">
+        <h1>Заголовок</h1>
+        <p>Текст</p>
+      </div>
     </div>
+    <button id="load">Загрузить еще</button>
   </body>
   <script>
-    let lol = document.querySelectorAll(".lol");
-    function ChangeBlock(element) {}
-    for (let i = 0; i < lol.length; i++) {
-      // console.log(i);
-      // lol[i].onclick = () => {
-      // console.log(lol[i].classList.contains("--active"));
-      // if (lol[i].classList.contains("--active"))
-      // lol[i].classList.remove("--active");
-      // else lol[i].classList.add("--active");
-      // };
-      lol.forEach((element) => {
-        lol[i].addEventListener("mouseenter", () => {
-          console.log(lol[i].classList.contains("--active"));
-          if (lol[i].classList.contains("--active"))
-            lol[i].classList.remove("--active");
-          else lol[i].classList.add("--active");
-          setTimeout(() => {
-            element.classList.remove("--active");
-          }, 1000);
-        });
+    function drawCards(cards) {
+      cards.forEach((element) => {
+        list.insertAdjacentHTML(
+          "afterbegin",
+          `<div class="card">
+        <h1>${element.title}</h1>
+        <p>${element.body}</p>
+      </div>`
+        );
       });
     }
+    let list = document.querySelector(".card-list");
+    let button = document.getElementById("load");
+    const getCard = async () => {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts?_limit=10&_page=1"
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          drawCards(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          console.log("Всегда");
+        });
+    };
+    let i = 0;
+    button.onclick = () => {
+      getCard(i++);
+    };
   </script>
 </html>
